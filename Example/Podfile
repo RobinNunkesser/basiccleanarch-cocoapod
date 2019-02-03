@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BasicCleanArch_Example' do
+  pod 'BasicCleanArch', :path => '../'
+
+  target 'BasicCleanArch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
