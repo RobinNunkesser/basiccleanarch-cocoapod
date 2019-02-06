@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Pods_BasicCleanArch_Example
+@testable import BasicCleanArch_Example
 
 class HttpBinGatewayTests : XCTestCase {
     

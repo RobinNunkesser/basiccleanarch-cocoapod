@@ -7,7 +7,7 @@
 
 import XCTest
 import BasicCleanArch
-@testable import Pods_BasicCleanArch_Example
+@testable import BasicCleanArch_Example
 
 class GetHttpRequestInteractorTests : XCTestCase {
     
@@ -20,7 +20,7 @@ class GetHttpRequestInteractorTests : XCTestCase {
     class MockViewController : ViewController {
         var displayExpectation: XCTestExpectation!
         
-        override func display(response: Result<String>) {
+        override func display(result: Result<String>) {
             displayExpectation.fulfill()
         }
     }
