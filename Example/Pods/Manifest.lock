@@ -1,0 +1,16 @@
+PODS:
+  - BasicCleanArch (0.1.0)
+
+DEPENDENCIES:
+  - BasicCleanArch (from `../`)
+
+EXTERNAL SOURCES:
+  BasicCleanArch:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BasicCleanArch: 570a93037ffece9b47f058202e3381cd10e234b3
+
+PODFILE CHECKSUM: 21b3c49ed7ee4fe397a8d117ae11b1cf8e5b3088
+
+COCOAPODS: 1.5.0

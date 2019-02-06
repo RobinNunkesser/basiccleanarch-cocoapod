@@ -1,0 +1,22 @@
+{
+  "name": "BasicCleanArch",
+  "version": "0.1.0",
+  "summary": "A short description of BasicCleanArch.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Robin Nunkesser/BasicCleanArch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Robin Nunkesser": "robin.nunkesser@hshl.de"
+  },
+  "source": {
+    "git": "https://github.com/Robin Nunkesser/BasicCleanArch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BasicCleanArch/Classes/**/*"
+}

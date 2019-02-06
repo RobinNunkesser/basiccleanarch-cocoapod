@@ -7,18 +7,39 @@
 //
 
 import UIKit
+import BasicCleanArch
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Displayer {
 
+    typealias ViewModelType = String
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let interactor = GetHttpRequestInteractor()
+        interactor.execute(request: nil, displayer: self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func display(result: Result<String>) {
+        switch result {
+        case let .success(value):
+            debugPrint(value)
+        case let .failure(error):
+            self.present(error: error, handler: nil)
+        }
     }
-
+    
+    func present(error: Error,
+                 handler: ((UIAlertAction) -> Swift.Void)?) {
+        let alertView = UIAlertController(
+            title: "Error",
+            message: error.localizedDescription,
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style: .default,
+            handler: nil)
+        alertView.addAction(okAction)
+        self.present(alertView, animated: true, completion: nil)
+    }
 }
 
