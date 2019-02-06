@@ -1,6 +1,7 @@
 import Foundation
 
-/// A `Displayer` is used to display the result of a use case that changes the displayed view.
+/// A `Displayer` is used to display the result of a use case that changes the
+/// displayed view.
 public protocol Displayer {
     associatedtype ViewModelType
 

@@ -1,6 +1,7 @@
 import Foundation
 
-/// A `UseCase` is typically implemented by an interactor. It executes the business logic of the use case.
+/// A `UseCase` is typically implemented by an interactor.
+/// It executes the business logic of the use case.
 public protocol UseCase {
     associatedtype DisplayerType : Displayer
     associatedtype PresenterType : Presenter
