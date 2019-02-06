@@ -12,7 +12,7 @@ import BasicCleanArch
 class GetHttpRequestInteractorTests : XCTestCase {
     
     class MockPresenter : HttpRequestPresenter {
-        override func present(entity: HttpRequestModel) -> String {
+        override func present(model: HttpRequestModel) -> String {
             return ("VALUE")
         }
     }

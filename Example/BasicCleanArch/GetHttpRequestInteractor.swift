@@ -30,7 +30,7 @@ class GetHttpRequestInteractor : UseCase {
                 case let .success(response):
                     displayer.display(result:
                         Result.success(
-                            self.presenter.present(entity: response)))
+                            self.presenter.present(model: response)))
                 case let .failure(error):
                     displayer.display(result: Result.failure(error))
                 }

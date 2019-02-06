@@ -14,7 +14,7 @@ class HttpRequestPresenterTests : XCTestCase {
 
     func testPresent() {
         let model = HttpRequestModel(origin: "origin", url: "url", headers: [:])
-        let viewModel = presenter.present(entity: model)
+        let viewModel = presenter.present(model: model)
         XCTAssert(viewModel == "Origin: origin, URL: url")
     }
 }

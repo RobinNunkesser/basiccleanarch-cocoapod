@@ -2,10 +2,10 @@ import Foundation
 import BasicCleanArch
 
 class HttpRequestPresenter : Presenter {
-    typealias Entity = HttpRequestModel
+    typealias Model = HttpRequestModel
     typealias ViewModel = String
     
-    func present(entity: HttpRequestModel) -> String {
-        return "Origin: \(entity.origin), URL: \(entity.url)"
+    func present(model: HttpRequestModel) -> String {
+        return "Origin: \(model.origin), URL: \(model.url)"
     }
 }
