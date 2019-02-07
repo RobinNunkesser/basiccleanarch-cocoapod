@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  BasicCleanArch
-//
-//  Created by Robin Nunkesser on 02/03/2019.
-//  Copyright (c) 2019 Robin Nunkesser. All rights reserved.
-//
-
 import UIKit
 import BasicCleanArch
 
