@@ -11,5 +11,6 @@ language: swift
 # - pod install --project-directory=Example
 script:
 - xcodebuild -showsdks
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/BasicCleanArch.xcworkspace -scheme BasicCleanArch-Example -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild -showdestinations -workspace Example/BasicCleanArch.xcworkspace -scheme BasicCleanArch-Example
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/BasicCleanArch.xcworkspace -scheme BasicCleanArch-Example -sdk iphonesimulator13.0 -destination 'platform=iOS Simulator,name=iPhone 8' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
