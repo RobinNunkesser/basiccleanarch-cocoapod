@@ -8,7 +8,7 @@ class HttpBinGateway {
         return URLSession(configuration: config)
     }()
     
-    func fetch(completion: @escaping (Result<HttpRequestModel>) -> Void) {
+    func fetch(completion: @escaping (Result<HttpRequestModel,Error>) -> Void) {
         let request = URLRequest(url: URL(string: url)!)
         let task = session.dataTask(with: request, completionHandler: {
             (data, response, error) -> Void in
@@ -20,7 +20,7 @@ class HttpBinGateway {
                 let decoder = JSONDecoder()
                 let item = try decoder.decode(HttpRequestModel.self,
                                               from: data)
-                completion(Result<HttpRequestModel>.success(item))
+                completion(Result<HttpRequestModel,Error>.success(item))
             } catch {
                 completion(Result.failure(error))
             }

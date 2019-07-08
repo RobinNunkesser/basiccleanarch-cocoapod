@@ -11,7 +11,7 @@ class ViewController: UIViewController, Displayer {
         interactor.execute(request: nil, displayer: self)
     }
     
-    func display(result: Result<String>) {
+    func display(result: Result<String,Error>) {
         switch result {
         case let .success(value):
             debugPrint(value)

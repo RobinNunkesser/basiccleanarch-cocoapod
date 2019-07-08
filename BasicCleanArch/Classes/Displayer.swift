@@ -8,5 +8,5 @@ public protocol Displayer {
     /// Displays data from a ViewModel or an Error.
     ///
     /// - parameter result: The result to display.
-    func display(result : Result<ViewModelType>)
+    func display(result : Result<ViewModelType,Error>)
 }

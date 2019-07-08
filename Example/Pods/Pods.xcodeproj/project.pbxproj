@@ -18,7 +18,6 @@
 		D71961B0473C359A94702727EB0A1D5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D77509D4DF6780F1AA7342F10141D051 /* Displayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A623D50CBE726E4D8A938234CC4F1 /* Displayer.swift */; };
 		EF8438A57DF679F97B0027EE6026E6A8 /* BasicCleanArch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4AB0A5484467491A9F14E4CF3C472 /* BasicCleanArch-dummy.m */; };
-		EFFD484E6EEBE30110C31F49A155429D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CFDF35B9C757786EE843F0973FE9E8 /* Result.swift */; };
 		FD7D713EF25D6CAB91AAA4CFBF71BFCE /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622F67EBC6ABD9860645C14846E6205 /* UseCase.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		68AB4ED30A4B637AA2D67B233D6EBCB4 /* Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = BasicCleanArch/Classes/Presenter.swift; sourceTree = "<group>"; };
 		6ABBAE1C040008C672265C77776997A9 /* Pods-BasicCleanArch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicCleanArch_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		813A623D50CBE726E4D8A938234CC4F1 /* Displayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Displayer.swift; path = BasicCleanArch/Classes/Displayer.swift; sourceTree = "<group>"; };
-		87CFDF35B9C757786EE843F0973FE9E8 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = BasicCleanArch/Classes/Result.swift; sourceTree = "<group>"; };
 		8C612DAC228344E86ED86563FB52DBBE /* Pods-BasicCleanArch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicCleanArch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8DADF88F3BA93CAFBB9E45D6A5B73C88 /* Pods-BasicCleanArch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicCleanArch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -208,7 +206,6 @@
 			children = (
 				813A623D50CBE726E4D8A938234CC4F1 /* Displayer.swift */,
 				68AB4ED30A4B637AA2D67B233D6EBCB4 /* Presenter.swift */,
-				87CFDF35B9C757786EE843F0973FE9E8 /* Result.swift */,
 				9622F67EBC6ABD9860645C14846E6205 /* UseCase.swift */,
 				EC8BC055186D9E6C946B13B699086FFC /* Pod */,
 				B9410F84DD361F8EEBEF595AB7FAA091 /* Support Files */,
@@ -326,19 +323,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					45EB23C96FA448E6A0BDE4B6E3C8669C = {
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 546132A0CFE6E0C9A6D7B1D077AD94DE /* Products */;
@@ -376,7 +374,6 @@
 				EF8438A57DF679F97B0027EE6026E6A8 /* BasicCleanArch-dummy.m in Sources */,
 				D77509D4DF6780F1AA7342F10141D051 /* Displayer.swift in Sources */,
 				BCA683ED21FFFC2CA2E82EB7FAB79711 /* Presenter.swift in Sources */,
-				EFFD484E6EEBE30110C31F49A155429D /* Result.swift in Sources */,
 				FD7D713EF25D6CAB91AAA4CFBF71BFCE /* UseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,7 +558,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -573,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -636,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -686,6 +685,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -715,7 +715,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BasicCleanArch'
-  s.version          = '4.0.0'
+  s.version          = '5.0.0'
   s.summary          = 'A set of helpful protocols for a basic mobile version of Robert C. Martin\'s Clean Architecture.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Robert C. Martin\'s Clean Architecture is very helpful to write well structured 
   s.author           = { 'Robin Nunkesser' => 'robin.nunkesser@hshl.de' }
   s.source           = { :git => 'https://github.com/RobinNunkesser/basiccleanarch-cocoapod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
 
   s.ios.deployment_target = '8.0'
 

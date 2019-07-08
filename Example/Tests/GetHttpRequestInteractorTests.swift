@@ -13,7 +13,7 @@ class GetHttpRequestInteractorTests : XCTestCase {
     class MockViewController : ViewController {
         var displayExpectation: XCTestExpectation!
         
-        override func display(result: Result<String>) {
+        override func display(result: Result<String,Error>) {
             displayExpectation.fulfill()
         }
     }
@@ -22,7 +22,7 @@ class GetHttpRequestInteractorTests : XCTestCase {
         var fetchExpectation: XCTestExpectation!
         
         override func fetch(
-            completion: @escaping (Result<HttpRequestModel>) -> Void) {
+            completion: @escaping (Result<HttpRequestModel,Error>) -> Void) {
             fetchExpectation.fulfill()
         }
     }
