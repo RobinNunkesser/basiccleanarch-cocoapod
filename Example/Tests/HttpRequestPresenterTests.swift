@@ -1,10 +1,3 @@
-//
-//  HttpRequestPresenterTests.swift
-//
-//  Created by Prof. Dr. Nunkesser, Robin on 02.02.19.
-//  Copyright © 2019 Hochschule Hamm-Lippstadt. All rights reserved.
-//
-
 import XCTest
 @testable import BasicCleanArch_Example
 

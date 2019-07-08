@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BasicCleanArch'
-  s.version          = '0.0.2'
+  s.version          = '4.0.0'
   s.summary          = 'A set of helpful protocols for a basic mobile version of Robert C. Martin\'s Clean Architecture.'
 
 # This description is used to generate tags and improve search results.
