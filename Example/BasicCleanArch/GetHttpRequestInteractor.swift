@@ -28,11 +28,10 @@ class GetHttpRequestInteractor : UseCase {
             {
                 switch $0 {
                 case let .success(response):
-                    displayer.display(result:
-                        Result.success(
-                            self.presenter.present(model: response)))
+                    let viewModel = self.presenter.present(model: response)
+                    displayer.display(success: viewModel)
                 case let .failure(error):
-                    displayer.display(result: Result.failure(error))
+                    displayer.display(failure: error)
                 }
         })
     }

@@ -13,8 +13,12 @@ class GetHttpRequestInteractorTests : XCTestCase {
     class MockViewController : ViewController {
         var displayExpectation: XCTestExpectation!
         
-        override func display(result: Result<String,Error>) {
+        override func display(success: String) {
             displayExpectation.fulfill()
+        }
+        
+        override func display(failure: Error) {
+            XCTFail(failure.localizedDescription)
         }
     }
     

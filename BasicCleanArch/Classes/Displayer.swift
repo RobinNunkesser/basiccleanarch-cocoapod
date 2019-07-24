@@ -5,8 +5,13 @@ import Foundation
 public protocol Displayer {
     associatedtype ViewModelType
 
-    /// Displays data from a ViewModel or an Error.
+    /// Displays data from a ViewModel
     ///
-    /// - parameter result: The result to display.
-    func display(result : Result<ViewModelType,Error>)
+    /// - parameter success: The result to display.
+    func display(success: ViewModelType)
+    
+    /// Displays data from an Error.
+    ///
+    /// - parameter failure: The error to display.
+    func display(failure: Error)
 }

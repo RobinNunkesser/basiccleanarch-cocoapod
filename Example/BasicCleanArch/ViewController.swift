@@ -2,7 +2,6 @@ import UIKit
 import BasicCleanArch
 
 class ViewController: UIViewController, Displayer {
-
     typealias ViewModelType = String
     
     override func viewDidLoad() {
@@ -11,13 +10,12 @@ class ViewController: UIViewController, Displayer {
         interactor.execute(request: nil, displayer: self)
     }
     
-    func display(result: Result<String,Error>) {
-        switch result {
-        case let .success(value):
-            debugPrint(value)
-        case let .failure(error):
-            self.present(error: error, handler: nil)
-        }
+    func display(success: String) {
+        debugPrint(success)
+    }
+    
+    func display(failure: Error) {
+        self.present(error: failure, handler: nil)
     }
     
     func present(error: Error,
