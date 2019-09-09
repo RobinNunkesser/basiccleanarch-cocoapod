@@ -8,10 +8,21 @@ public protocol Displayer {
     /// Displays data from a ViewModel
     ///
     /// - parameter success: The result to display.
-    func display(success: ViewModelType)
+    /// - parameter resultCode: Used to distinguish similar requests.
+    func display(success: ViewModelType, resultCode: Int)
     
     /// Displays data from an Error.
     ///
     /// - parameter failure: The error to display.
     func display(failure: Error)
+}
+
+extension Displayer {
+    /// Displays data from a ViewModel
+    ///
+    /// - parameter success: The result to display.
+    public func display(success: ViewModelType)
+    {
+        return display(success: success, resultCode: 0)
+    }
 }

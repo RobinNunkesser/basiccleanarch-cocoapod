@@ -13,7 +13,7 @@ class GetHttpRequestInteractorTests : XCTestCase {
     class MockViewController : ViewController {
         var displayExpectation: XCTestExpectation!
         
-        override func display(success: String) {
+        override func display(success: String, resultCode: Int) {
             displayExpectation.fulfill()
         }
         
@@ -34,7 +34,7 @@ class GetHttpRequestInteractorTests : XCTestCase {
     func testCallDisplayer() {
         let interactor = GetHttpRequestInteractor(presenter: MockPresenter())
         let displayer = MockViewController()
-        displayer.displayExpectation = expectation(description: "displayexpect")
+        displayer.displayExpectation = expectation(description: "displayexpect")        
         interactor.execute(request: nil, displayer: displayer)
         waitForExpectations(timeout: 10, handler: nil)
     }

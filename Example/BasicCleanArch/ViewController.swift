@@ -6,11 +6,11 @@ class ViewController: UIViewController, Displayer {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let interactor = GetHttpRequestInteractor()
+        let interactor = GetHttpRequestInteractor()        
         interactor.execute(request: nil, displayer: self)
     }
-    
-    func display(success: String) {
+
+    func display(success: String, resultCode: Int) {
         debugPrint(success)
     }
     

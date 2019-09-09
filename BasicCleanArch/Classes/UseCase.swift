@@ -18,5 +18,19 @@ public protocol UseCase {
     ///
     /// - parameter request: Encapsulated request parameters.
     /// - parameter displayer: The Displayer to use for the result.
-    func execute(request : RequestType, displayer : DisplayerType)
+    /// - parameter resultCode: Used to distinguish similar requests.
+    func execute(request : RequestType,
+                 displayer : DisplayerType,
+                 resultCode: Int)
+}
+
+extension UseCase {
+    /// Executes the UseCase.
+    ///
+    /// - parameter request: Encapsulated request parameters.
+    /// - parameter displayer: The Displayer to use for the result.
+    public func execute(request : RequestType, displayer : DisplayerType)
+    {
+        return execute(request: request, displayer: displayer, resultCode: 0)
+    }
 }
