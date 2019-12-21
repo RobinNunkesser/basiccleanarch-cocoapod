@@ -19,11 +19,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+### Cocoapods
 BasicCleanArch is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'BasicCleanArch'
+```
+
+### Swift Package Manager
+BasicCleanArch is available through Swift Package Manager. To install it, simply add the following dependency to your Package.swift:
+
+``` swift
+.package(url: "https://github.com/RobinNunkesser/basiccleanarch-cocoapod.git", from: "5.2.1")
 ```
 
 ## Author
