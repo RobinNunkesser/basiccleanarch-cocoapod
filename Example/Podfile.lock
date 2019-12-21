@@ -1,5 +1,5 @@
 PODS:
-  - BasicCleanArch (0.1.0)
+  - BasicCleanArch (5.2.1)
 
 DEPENDENCIES:
   - BasicCleanArch (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BasicCleanArch: 570a93037ffece9b47f058202e3381cd10e234b3
+  BasicCleanArch: b4c0d28416997d515e7f91e394d6f2125b5cc580
 
 PODFILE CHECKSUM: 21b3c49ed7ee4fe397a8d117ae11b1cf8e5b3088
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.8.3

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BasicCleanArch'
-  s.version          = '5.2.0'
+  s.version          = '5.2.1'
   s.summary          = 'A set of helpful protocols for a basic mobile version of Robert C. Martin\'s Clean Architecture.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Robert C. Martin\'s Clean Architecture is very helpful to write well structured 
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'BasicCleanArch/Classes/**/*'
+  s.source_files = 'Sources/BasicCleanArch/Classes/**/*'
   
   # s.resource_bundles = {
   #   'BasicCleanArch' => ['BasicCleanArch/Assets/*.png']
